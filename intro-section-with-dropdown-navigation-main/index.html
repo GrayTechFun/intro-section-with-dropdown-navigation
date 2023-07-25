@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <img class="logo" src="./images/logo.svg" alt="" />
+      <nav class="options">
+        <a class="drop-down">
+          Features <img src="./images/icon-arrow-down.svg" alt="" />
+        </a>
+        <div class="drop-down-box-features">
+          <a><img src="./images/icon-todo.svg" alt="" />&nbsp; Todo List</a
+          ><br />
+          <a><img src="./images/icon-calendar.svg" alt="" />&nbsp; Calendar</a
+          ><br />
+          <a><img src="./images/icon-reminders.svg" alt="" />&nbsp; Reminders</a
+          ><br />
+          <a><img src="./images/icon-planning.svg" alt="" />&nbsp; Planning</a
+          ><br />
+        </div>
+        <a class="drop-down">
+          Company <img src="./images/icon-arrow-down.svg" alt="" />
+        </a>
+        <div class="drop-down-box-company">
+          <a>History</a><br />
+          <a>Our Team</a><br />
+          <a>Blog</a><br />
+        </div>
+        <a>Careers</a>
+        <a>About</a>
+      </nav>
+      <div class="user">
+        <a class="login">Login</a>
+        <button class="register">Register</button>
+      </div>
+      <div class="menu-mobile">
+        <img class="icon-menu" src="./images/icon-menu.svg" alt="" />
+      </div>
+    </div>
+
+    <div class="main-mobile">
+      <img class="hero" src="./images/image-hero-mobile.png" alt="" />
+      <div class="heading">Make remote work</div>
+      <div class="para">
+        Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.
+      </div>
+      <div class="btn">
+        <button class="learn">Learn more</button>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="left">
+        <div class="heading">Make remote work</div>
+        <div class="para">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </div>
+        <div class="btn">
+          <button class="learn">Learn more</button>
+        </div>
+        <div class="partners">
+          <img class="databiz" src="./images/client-databiz.svg" alt="" />
+          <img class="audiophile" src="./images/client-audiophile.svg" alt="" />
+          <img class="meet" src="./images/client-meet.svg" alt="" />
+          <img class="maker" src="./images/client-maker.svg" alt="" />
+        </div>
+      </div>
+      <img src="./images/image-hero-desktop.png" alt="" class="hero" />
+    </div>
+
+    <div class="mobile-partners">
+      <img class="databiz" src="./images/client-databiz.svg" alt="" />
+      <img class="audiophile" src="./images/client-audiophile.svg" alt="" />
+      <img class="meet" src="./images/client-meet.svg" alt="" />
+      <img class="maker" src="./images/client-maker.svg" alt="" />
+    </div>
+
+    <div class="mobile-sidebar" id="sidebar-menu">
+      <div class="cross-bar" id="cross-bar">
+        <img
+          class="cross"
+          id="cross"
+          src="./images/icon-close-menu.svg"
+          alt=""
+        />
+      </div>
+      <nav class="navigation-bar">
+        <div class="features-mobile">
+          <a
+            >Features&nbsp;
+            <img
+              class="arrow-mobile"
+              id="features-mobile-icon"
+              src="./images/icon-arrow-down.svg"
+              alt="" /></a
+          ><br />
+        </div>
+        <div class="drop-down-mobile" id="features-mobile">
+          <a><img src="./images/icon-todo.svg" alt="" />&nbsp; Todo List</a
+          ><br />
+          <a><img src="./images/icon-calendar.svg" alt="" />&nbsp; Calendar</a
+          ><br />
+          <a><img src="./images/icon-reminders.svg" alt="" />&nbsp; Reminders</a
+          ><br />
+          <a><img src="./images/icon-planning.svg" alt="" />&nbsp; Planning</a>
+        </div>
+        <div class="company-mobile">
+          <a
+            >Company &nbsp;
+            <img
+              class="arrow-mobile"
+              id="company-mobile-icon"
+              src="./images/icon-arrow-down.svg"
+              alt=""
+          /></a>
+        </div>
+        <div class="drop-down-mobile" id="company-mobile">
+          <a>History</a><br />
+          <a>Our Team</a><br />
+          <a>Blog</a>
+        </div>
+        <a>Careers</a><br />
+        <a>About</a>
+      </nav>
+
+      <div class="mobile-user">
+        <a>Login</a>
+        <button>Register</button>
+      </div>
+    </div>
+  </body>
+</html>
