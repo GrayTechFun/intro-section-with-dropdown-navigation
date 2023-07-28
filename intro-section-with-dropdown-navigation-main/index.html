@@ -14,6 +14,9 @@
 
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
+    <link rel="stylesheet" href="./css/main.css" />
+    <script defer src="./js/index.js"></script>
+
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
@@ -29,10 +32,11 @@
     <div class="menu">
       <img class="logo" src="./images/logo.svg" alt="" />
       <nav class="options">
-        <a class="drop-down">
-          Features <img src="./images/icon-arrow-down.svg" alt="" />
+        <a class="drop-down drop-down-features" onclick="features()">
+          Features
+          <img id="features-arrow" src="./images/icon-arrow-down.svg" alt="" />
         </a>
-        <div class="drop-down-box-features">
+        <div class="drop-down-box-features" id="features-drop-down">
           <a><img src="./images/icon-todo.svg" alt="" />&nbsp; Todo List</a
           ><br />
           <a><img src="./images/icon-calendar.svg" alt="" />&nbsp; Calendar</a
@@ -42,22 +46,23 @@
           <a><img src="./images/icon-planning.svg" alt="" />&nbsp; Planning</a
           ><br />
         </div>
-        <a class="drop-down">
-          Company <img src="./images/icon-arrow-down.svg" alt="" />
+        <a class="drop-down" onclick="company()">
+          Company
+          <img id="company-arrow" src="./images/icon-arrow-down.svg" alt="" />
         </a>
-        <div class="drop-down-box-company">
+        <div class="drop-down-box-company" id="company-drop-down">
           <a>History</a><br />
           <a>Our Team</a><br />
           <a>Blog</a><br />
         </div>
-        <a>Careers</a>
-        <a>About</a>
+        <a class="careers">Careers</a>
+        <a class="about">About</a>
       </nav>
       <div class="user">
         <a class="login">Login</a>
         <button class="register">Register</button>
       </div>
-      <div class="menu-mobile">
+      <div class="menu-mobile" onclick="sidebarOpen()">
         <img class="icon-menu" src="./images/icon-menu.svg" alt="" />
       </div>
     </div>
@@ -108,10 +113,11 @@
           id="cross"
           src="./images/icon-close-menu.svg"
           alt=""
+          onclick="sidebarClose()"
         />
       </div>
       <nav class="navigation-bar">
-        <div class="features-mobile">
+        <div class="features-mobile" onclick="featuresM()">
           <a
             >Features&nbsp;
             <img
@@ -130,7 +136,7 @@
           ><br />
           <a><img src="./images/icon-planning.svg" alt="" />&nbsp; Planning</a>
         </div>
-        <div class="company-mobile">
+        <div class="company-mobile" onclick="companyM()">
           <a
             >Company &nbsp;
             <img
